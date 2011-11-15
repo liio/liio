@@ -1,1 +1,23 @@
 this is liio.org 's repository.
+
+how to use this git repository:
+
+#创建一个本地目录
+mkdir liio
+cd liio
+
+#初始化本地仓库
+git init
+
+#新增远程仓库github
+git remote add github git@github.com:liio/liio.git
+
+#从远程仓库检出文档到本地的master分支
+git pull github master
+
+#本地修改文档或新增文档
+git add .
+git commit -m "some comment"
+
+#把本地修改推送到远程仓库github
+git push github master
